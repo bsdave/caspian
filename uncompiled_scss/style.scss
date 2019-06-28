@@ -1,0 +1,41 @@
+@import "grid/main";
+@import "slick/main";
+
+@import "styles/support/normalize";
+@import "styles/support/variables";
+@import "styles/support/fonts";
+@import "styles/support/mixins";
+@import "styles/support/grid";
+@import "styles/support/common";
+
+body {
+  font-size: 15px;
+
+  &.muted {
+    &::after {
+      position: fixed;
+      content: "";
+      display: block;
+
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: $color-black;
+      opacity: 0.5;
+      z-index: 100;
+    }
+  }
+}
+
+@include tablet {
+  body {
+    font-size: 16px;
+  }
+}
+
+@include desktop {
+  body {
+    font-size: 18px;
+  }
+}
