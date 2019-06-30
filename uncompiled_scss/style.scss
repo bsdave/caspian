@@ -11,18 +11,20 @@
 @import "styles/components/open_jobs";
 
 body {
-
+  background: #232831;
+  color: $color-white;
+  font-size: 15px;
 }
-
 
 @include tablet {
   body {
-    font-size: 16px;
   }
 }
 
 @include desktop {
   body {
-    font-size: 18px;
+    background: $color-white;
+    color: $color-black;
+    font-size: 13px;
   }
 }

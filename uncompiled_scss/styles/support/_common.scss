@@ -1,7 +1,28 @@
-.title{
+.title {
   font-family: 'YesevaOne';
   font-style: normal;
   font-weight: normal;
   font-size: 60px;
   line-height: 70px;
+  margin-top: 0;
+}
+
+.button {
+  background: $color-red;
+  color: $color-white;
+  font-family: 'Circe-Bold';
+
+  font-size: 13px;
+  letter-spacing: 1.73px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 18px 38px;
+  display: inline-block;
+
+
+  transition: 250ms ease;
+
+  &:hover {
+    background: #B40927;
+  }
 }
