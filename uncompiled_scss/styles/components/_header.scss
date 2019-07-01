@@ -17,17 +17,20 @@
       position: absolute;
       left: 0;
       right: 0;
-
+      top: -1000px;
       opacity: 0;
       z-index: -1;
       transition: 300ms ease-out;
 
       text-align: left;
-      .close {
-        width: 20px;
-        margin-bottom: 13px;
-        float: right;
+      .close-toggler {
+        margin-bottom: 4px;
         cursor: pointer;
+        .toggler{
+          position: absolute;
+          right: 10px;
+          top: 51px;
+        }
       }
       .dropdown {
         position: relative;
@@ -86,7 +89,7 @@
         .menu-item,
         .dropdown-item {
           list-style: none;
-          margin: 20px 40px 14px 40px;
+          margin: 20px 40px 14px 16px;
           border-bottom: 1px solid #D8D8D8;
           position: relative;
           &:last-child{
@@ -153,14 +156,16 @@
 @include desktop {
   .header {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     .header-body {
-      .toggler {
+      .close-toggler {
         display: none;
       }
       .navigation {
         position: relative;
         display: flex;
+        top: 0;
+
         opacity: 1;
         z-index: 1;
         border-bottom: 1px solid #D8D8D8;

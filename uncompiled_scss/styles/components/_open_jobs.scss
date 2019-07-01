@@ -1,28 +1,51 @@
-
 .editor-block {
-  margin-bottom: 100px;
-  .title {
-    margin-left: 93px;
+  margin-top: 134px;
+  margin-bottom: 90px;
+  .button{
+    margin-left: 17px;
+    text-align: center;
   }
-  .editor-image{
-    float: right;
+  .title {
+    margin-bottom: 32px;
+    position: relative;
+    &::after{
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      top: 0;
+      left: 0;
+      background: url("/assets/images/arrow.svg") 50% no-repeat;
+    }
   }
   .editor-info {
-    font-family: 'Circe-Regular';
-    font-size: 20px;
-    line-height: 30px;
     p {
+      font-family: 'Circe-Regular';
+      font-size: 18px;
+      line-height: 25px;
       margin-top: 0;
       margin-bottom: 32px;
     }
   }
+  .editor-image{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
   .editor-list {
     padding-left: 0;
-    margin-left: 26px;
+    margin-left: 20px;
     .list-item {
       list-style: none;
-      margin-bottom: 30px;
-      padding-right: 20px;
+      font-family: 'Circe-Regular';
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 27px;
       position: relative;
       &::before {
         position: absolute;
@@ -32,38 +55,46 @@
         width: 4px;
         border-radius: 50%;
         background: $color-red;
-        left: -29px;
-        top: 12px;
+        left: -21px;
+        top: 10px;
       }
     }
   }
 }
+
 @include desktop {
   .editor-block {
     margin-bottom: 104px;
+    margin-top: 0;
+    position: relative;
+    .button{
+      margin-left: 0;
+      margin-top: 5px;
+    }
     .title {
       margin-left: 93px;
+      margin-bottom: 40px;
     }
-    .editor-image{
-      float: right;
+    .editor-image {
+      right: 4px;
+      top: 109px;
+      position: absolute;
     }
     .editor-info {
-      font-family: 'Circe-Regular';
-      font-size: 20px;
-      line-height: 30px;
       p {
+        font-size: 20px;
+        line-height: 30px;
         margin-top: 0;
-        margin-bottom: 32px;
+        margin-bottom: 17px;
       }
     }
     .editor-list {
-      padding-left: 0;
-      margin-left: 26px;
+      margin-left: 27px;
       .list-item {
-        list-style: none;
-        margin-bottom: 30px;
-        padding-right: 20px;
         position: relative;
+        font-size: 20px;
+        padding-right: 20px;
+        line-height: 30px;
         &::before {
           position: absolute;
           content: "";
@@ -72,8 +103,8 @@
           width: 4px;
           border-radius: 50%;
           background: $color-red;
-          left: -29px;
-          top: 12px;
+          left: -27px;
+          top: 10px;
         }
       }
     }

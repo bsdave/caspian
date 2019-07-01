@@ -2,8 +2,8 @@
   font-family: 'YesevaOne';
   font-style: normal;
   font-weight: normal;
-  font-size: 60px;
-  line-height: 70px;
+  font-size: 28px;
+  line-height: 35px;
   margin-top: 0;
 }
 
@@ -19,10 +19,17 @@
   padding: 18px 38px;
   display: inline-block;
 
-
   transition: 250ms ease;
 
   &:hover {
     background: #B40927;
+  }
+}
+
+@include desktop {
+  .title {
+    font-size: 60px;
+    line-height: 70px;
+    margin-top: 0;
   }
 }
