@@ -1,7 +1,11 @@
+
 .editor-block {
-  margin-bottom: 120px;
+  margin-bottom: 100px;
   .title {
     margin-left: 93px;
+  }
+  .editor-image{
+    float: right;
   }
   .editor-info {
     font-family: 'Circe-Regular';
@@ -12,6 +16,46 @@
       margin-bottom: 32px;
     }
   }
+  .editor-list {
+    padding-left: 0;
+    margin-left: 26px;
+    .list-item {
+      list-style: none;
+      margin-bottom: 30px;
+      padding-right: 20px;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+        background: $color-red;
+        left: -29px;
+        top: 12px;
+      }
+    }
+  }
+}
+@include desktop {
+  .editor-block {
+    margin-bottom: 104px;
+    .title {
+      margin-left: 93px;
+    }
+    .editor-image{
+      float: right;
+    }
+    .editor-info {
+      font-family: 'Circe-Regular';
+      font-size: 20px;
+      line-height: 30px;
+      p {
+        margin-top: 0;
+        margin-bottom: 32px;
+      }
+    }
     .editor-list {
       padding-left: 0;
       margin-left: 26px;
@@ -33,8 +77,5 @@
         }
       }
     }
-  .editor-image {
-    margin-left: 13px;
-    padding-left: 0;
   }
 }

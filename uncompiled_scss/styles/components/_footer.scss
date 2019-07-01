@@ -1,14 +1,24 @@
-.footer {
+.footer{
+  background: #1E2127;
   text-align: center;
-  background: #F3F5F7;
-  padding: 10px 0 20px 0;
-  p {
-    font-family: 'Circe-Regular';
-    font-style: normal;
-    font-size: 15px;
-    vertical-align: Top;
-    padding: 0;
-    margin: 0 10px 0 0;
+  padding: 20px 0;
+  p{
     color: #989FAB;
+  }
+}
+
+@include desktop {
+  .footer {
+    text-align: center;
+    background: #F3F5F7;
+    min-height: 50px;
+    p {
+      font-family: 'Circe-Regular';
+      font-style: normal;
+      font-size: 15px;
+      padding: 0;
+      margin: 0 10px 10px 0;
+      color: #989FAB;
+    }
   }
 }

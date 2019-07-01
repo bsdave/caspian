@@ -35,6 +35,7 @@ $font_yeseva: '../fonts/YesevaOne';
   font-family: 'YesevaOne';
   src: url($font_yeseva + '.eot'); /* IE9 Compat Modes */
   src: url($font_yeseva + '.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url($font_yeseva + '.woff2') format('woff2'), /* Super Modern Browsers */
   url($font_yeseva + '.woff') format('woff'), /* Pretty Modern Browsers */
   url($font_yeseva + '.ttf') format('truetype'), /* Safari, Android, iOS */
   url($font_yeseva + '.svg#svgFontName') format('svg'), /* Legacy iOS */

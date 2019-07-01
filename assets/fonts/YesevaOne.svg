@@ -2,9 +2,9 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20170731 at Sat Sep 22 14:35:19 2012
+Created by FontForge 20170731 at Mon Sep 24 09:11:36 2012
  By Aleksey,,,
-Copyright (c) 2011-2012 by Jovanny Lemonad. All rights reserved.
+Copyright (c) 2011-2012, Jovanny Lemonad (lemonad@jovanny.ru), with Reserved Font Name 'Yeseva'
 </metadata>
 <defs>
 <font id="YesevaOne" horiz-adv-x="560" >
@@ -20,7 +20,7 @@ Copyright (c) 2011-2012 by Jovanny Lemonad. All rights reserved.
     cap-height="700"
     bbox="-130 -309 1275 940"
     underline-thickness="50"
-    underline-position="-150"
+    underline-position="-200"
     unicode-range="U+0020-2122"
   />
 <missing-glyph horiz-adv-x="285" 
