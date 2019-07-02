@@ -4,6 +4,7 @@
   padding: 20px 0;
   p{
     color: #989FAB;
+    padding: 0;
   }
 }
 
@@ -12,12 +13,12 @@
     text-align: center;
     background: #F3F5F7;
     min-height: 50px;
+    padding-top: 10px;
     p {
       font-family: 'Circe-Regular';
       font-style: normal;
       font-size: 15px;
-      padding: 0;
-      margin: 0 10px 10px 0;
+      margin: 0 10px 0 0;
       color: #989FAB;
     }
   }

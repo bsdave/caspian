@@ -9,7 +9,6 @@
 
   .header-body {
     padding: 42px 0 50px 0;
-
     .logo {
       display: none;
     }
@@ -52,11 +51,7 @@
         }
         .dropdown-menu {
           display: none;
-          position: absolute;
-          background-color: #f9f9f9;
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          padding: 20px 0;
-          z-index: 1;
+          background-color: #FFFFFF;
         }
         &.dropdown:hover .dropdown-menu {
           display: block;
@@ -158,8 +153,15 @@
 @include desktop {
   .header {
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 32px;
     .header-body {
+      .menu-toggle{
+        display: none;
+      }
+      .logo {
+        margin: 0 116px;
+        display: block;
+      }
       .navigation {
         position: relative;
         display: flex;
@@ -170,10 +172,6 @@
         border-bottom: 1px solid #D8D8D8;
         .close-toggler {
           display: none;
-        }
-        .logo {
-          margin: 0 116px;
-          display: block;
         }
         .navigation-menu {
           display: inline-flex;
@@ -195,6 +193,14 @@
             .menu-item {
               margin-right: 16px;
             }
+          }
+          .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 20px 0;
+            z-index: 1;
           }
           .menu-item {
             border: none;
