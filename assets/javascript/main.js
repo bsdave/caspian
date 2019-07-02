@@ -1,3 +1,10 @@
 $(function () {
-  alert('I\'m in assets/javascript/main.js');
+  $('.toggler').click(function () {
+    $('.header').toggleClass('opened');
+  });
+
+  $('.dropdown').click(function () {
+    $(this).toggleClass('active');
+  });
+
 });
