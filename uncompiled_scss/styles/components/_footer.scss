@@ -1,8 +1,8 @@
-.footer{
+.footer {
   background: #1E2127;
   text-align: center;
   padding: 20px 0;
-  p{
+  p {
     color: #989FAB;
     padding: 0;
   }
@@ -12,13 +12,13 @@
   .footer {
     text-align: center;
     background: #F3F5F7;
-    min-height: 50px;
-    padding-top: 10px;
+    padding: 1px 0 10px 0;
     p {
       font-family: 'Circe-Regular';
       font-style: normal;
       font-size: 15px;
-      margin: 0 10px 0 0;
+      padding: 0;
+      margin-right: 9px;
       color: #989FAB;
     }
   }
