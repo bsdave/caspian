@@ -9,6 +9,7 @@
 
   .header-body {
     padding: 42px 0 50px 0;
+
     .logo {
       display: none;
     }
@@ -25,6 +26,7 @@
       text-align: left;
       .close-toggler {
         margin-bottom: 4px;
+        display: block;
         cursor: pointer;
         .toggler{
           position: absolute;
@@ -89,7 +91,7 @@
         .menu-item,
         .dropdown-item {
           list-style: none;
-          margin: 20px 40px 14px 16px;
+          margin: 20px 16px 14px 16px;
           border-bottom: 1px solid #D8D8D8;
           position: relative;
           &:last-child{
@@ -158,9 +160,6 @@
     position: relative;
     margin-bottom: 15px;
     .header-body {
-      .close-toggler {
-        display: none;
-      }
       .navigation {
         position: relative;
         display: flex;
@@ -169,6 +168,9 @@
         opacity: 1;
         z-index: 1;
         border-bottom: 1px solid #D8D8D8;
+        .close-toggler {
+          display: none;
+        }
         .logo {
           margin: 0 116px;
           display: block;

@@ -1,14 +1,16 @@
+
 .editor-block {
   margin-top: 134px;
   margin-bottom: 90px;
-  .button{
+  .button {
     margin-left: 17px;
     text-align: center;
   }
   .title {
     margin-bottom: 32px;
+    margin-left: 0;
     position: relative;
-    &::after{
+    &::after {
       position: absolute;
       content: '';
       width: 10px;
@@ -28,13 +30,18 @@
       margin-bottom: 32px;
     }
   }
-  .editor-image{
+  .editor-image {
     position: relative;
     margin: 0;
     padding: 0;
+
+    margin-left: -25px;
+    margin-right: -25px;
+
     img {
+      display: inline-block;
       width: 100%;
-      height: 100%;
+      height: auto;
     }
   }
   .editor-list {
@@ -46,6 +53,7 @@
       font-size: 18px;
       line-height: 25px;
       margin-bottom: 27px;
+      margin-top: 30px;
       position: relative;
       &::before {
         position: absolute;
@@ -67,7 +75,7 @@
     margin-bottom: 104px;
     margin-top: 0;
     position: relative;
-    .button{
+    .button {
       margin-left: 0;
       margin-top: 5px;
     }
@@ -79,6 +87,8 @@
       right: 4px;
       top: 109px;
       position: absolute;
+      width: 50%;
+      margin: auto;
     }
     .editor-info {
       p {
@@ -89,11 +99,13 @@
       }
     }
     .editor-list {
-      margin-left: 27px;
+      margin-left: 26px;
+      margin-top: 29px;
       .list-item {
         position: relative;
         font-size: 20px;
         padding-right: 20px;
+        margin-bottom: 31px;
         line-height: 30px;
         &::before {
           position: absolute;
