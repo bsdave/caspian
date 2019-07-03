@@ -71,6 +71,16 @@
   }
 }
 
+@include desktop{
+  .d-order-0 {
+    order: 0;
+  }
+
+  .d-order-1 {
+    order: 1;
+  }
+}
+
 @media screen and (min-width: 1320px) {
   .wide-container {
     max-width: 1345px;

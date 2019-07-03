@@ -11,67 +11,92 @@
 }
 
 .projects-pic {
-  margin-top: 100px;
+  position: relative;
+  margin: 117px 0;
+  .img-block {
+    min-height: 280px;
+  }
+  .projects-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 0;
+    padding-right: 0;
+    margin-top: 30px;
+
+    color: #FFFFFF;
+    .title {
+      font-size: 30px;
+      line-height: 35px;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+    }
+    .description {
+      font-family: 'Circe-Regular';
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0;
+      padding: 0 15% 0 25px;
+    }
+  }
 }
 
 .project-carts {
   text-align: center;
-  h1 {
-    font-family: 'YesevaOne';
-    font-style: normal;
-    font-weight: normal;
+  margin-bottom: 70px;
+  .title {
     font-size: 17px;
     line-height: 25px;
-    letter-spacing: 0.5px;
-    text-align: center;
     margin-top: 86px;
-    margin-right: 10px;
+    letter-spacing: 0;
+    margin-left: 0;
     margin-bottom: 100px;
-    padding: 0 100px;
     position: relative;
     &::after {
       content: '';
       position: absolute;
       display: inline-block;
       bottom: -34px;
-      left: 30%;
-      width: 203px;
+      width: 200px;
+      margin: auto;
+      left: 0;
+      right: 0;
       height: 1px;
       background: $color-red;
     }
   }
-  .carts {
-    flex-direction: column;
-    display: inline-flex;
-    .projects-pic {
+  .carts-block {
+    .cart {
       margin-left: -25px;
       margin-right: -25px;
-    }
-    .cart {
-      display: inline-flex;
       margin-bottom: 30px;
       position: relative;
-
       .cart-link {
         font-family: 'YesevaOne';
         font-style: normal;
         font-weight: normal;
         text-transform: uppercase;
         background: #fff;
-        margin-bottom: 0;
         font-size: 17px;
         line-height: 25px;
         letter-spacing: 1px;
+        padding: 0 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         position: absolute;
         bottom: 0;
         width: 100%;
-        text-align: center;
         text-decoration: none;
-        padding: 35px 90px 35px 90px;
-
+        min-height: 92px;
         color: $color-darkgray;
-        opacity: 0.7;
-        &:hover{
+        opacity: 0.8;
+        &:hover {
+          transition: 300ms;
+          min-height: 105px;
           opacity: 0.9;
         }
       }
@@ -79,32 +104,67 @@
   }
 }
 
+@include tablet {
+
+  .project-carts {
+    .carts-block {
+      .cart {
+        margin-right: 10px;
+        .cart-link {
+          padding: 0 90px;
+        }
+      }
+    }
+  }
+  .projects-pic {
+    .projects-info {
+      padding-right: 25%;
+    }
+  }
+}
+
 @include desktop {
   .projects-pic {
-    margin-top: 0;
+    margin: 0 0 30px 0;
+    .img-block {
+      min-height: 500px;
+      box-shadow: 0 5px 10px 0 #cccc;
+    }
+    .projects-info {
+      text-align: left;
+      margin-top: 14%;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: right;
+      color: #FFFFFF;
+      padding-right: 13%;
+      .title {
+        font-size: 56px;
+        line-height: 55px;
+        margin-left: 0;
+        letter-spacing: -1px;
+      }
+      .description {
+        font-size: 22px;
+        letter-spacing: 0;
+        line-height: 30px;
+        padding: 0 52% 0 0;
+      }
+    }
   }
   .project-carts {
-    text-align: left;
-    h1 {
+    .title {
       font-size: 25px;
       line-height: 35px;
-      padding: 0 200px;
-      &::after {
-        left: 41%;
-      }
-
+      letter-spacing: 0.5px;
+      padding: 0 17%;
     }
-    .carts {
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      .projects-pic {
-        margin: auto;
-      }
+    .carts-block {
       .cart {
-        margin-right: 45px;
+        margin-right: 20px;
+        box-shadow: 1px 5px 10px 1px #cccc;
         .cart-link {
-          padding: 35px 90px 35px 90px;
+          padding: 0 90px;
         }
       }
     }
