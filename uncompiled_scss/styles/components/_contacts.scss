@@ -1,7 +1,10 @@
-
 .contacts {
   margin-top: 110px;
   margin-bottom: 0;
+  .map{
+    margin-left: -25px;
+    margin-right: -25px;
+  }
   .none {
     display: none;
   }
@@ -23,7 +26,7 @@
       }
     }
       .img-block {
-        min-height: 200px;
+        min-height: 190px;
       }
   }
 }
@@ -44,6 +47,7 @@
     margin-top: 30px;
     margin-bottom: 113px;
     position: relative;
+
     .none {
       display: inline;
     }
