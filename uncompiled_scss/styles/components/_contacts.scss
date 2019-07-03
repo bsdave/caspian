@@ -3,15 +3,6 @@
     margin: 0;
     padding: 0;
   }
-  &.map {
-    margin-left: -25px;
-    margin-right: -25px;
-    iframe {
-      width: 100%;
-      display: inline-block;
-      height: auto;
-    }
-  }
   .title {
     margin-top: 103px;
     margin-left: 0;
@@ -39,6 +30,12 @@
   }
 }
 
+@include tablet{
+  .map{
+    width: 400px;
+  }
+}
+
 @include desktop {
   .contacts {
     margin-left: 90px;
@@ -50,6 +47,10 @@
     .contact-blocks {
       display: inline-flex;
       flex-direction: row;
+      .map{
+        width: 600px;
+        height: 400px;
+      }
       .contact-block {
         .paragraph-left {
           font-size: 20px;

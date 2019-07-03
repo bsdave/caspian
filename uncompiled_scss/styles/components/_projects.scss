@@ -1,0 +1,113 @@
+.header {
+  &.project-header {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .header-body {
+    &.project-header {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.projects-pic {
+  margin-top: 100px;
+}
+
+.project-carts {
+  text-align: center;
+  h1 {
+    font-family: 'YesevaOne';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: 86px;
+    margin-right: 10px;
+    margin-bottom: 100px;
+    padding: 0 100px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      bottom: -34px;
+      left: 30%;
+      width: 203px;
+      height: 1px;
+      background: $color-red;
+    }
+  }
+  .carts {
+    flex-direction: column;
+    display: inline-flex;
+    .projects-pic {
+      margin-left: -25px;
+      margin-right: -25px;
+    }
+    .cart {
+      display: inline-flex;
+      margin-bottom: 30px;
+      position: relative;
+
+      .cart-link {
+        font-family: 'YesevaOne';
+        font-style: normal;
+        font-weight: normal;
+        text-transform: uppercase;
+        background: #fff;
+        margin-bottom: 0;
+        font-size: 17px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        padding: 35px 90px 35px 90px;
+
+        color: $color-darkgray;
+        opacity: 0.7;
+        &:hover{
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .projects-pic {
+    margin-top: 0;
+  }
+  .project-carts {
+    text-align: left;
+    h1 {
+      font-size: 25px;
+      line-height: 35px;
+      padding: 0 200px;
+      &::after {
+        left: 41%;
+      }
+
+    }
+    .carts {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      .projects-pic {
+        margin: auto;
+      }
+      .cart {
+        margin-right: 45px;
+        .cart-link {
+          padding: 35px 90px 35px 90px;
+        }
+      }
+    }
+  }
+
+}
