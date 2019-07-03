@@ -10,6 +10,13 @@
 @import "styles/components/footer";
 @import "styles/components/open_jobs";
 @import "styles/components/contacts";
+@import "styles/components/projects";
+
+html {
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
 
 body {
   background: #232831;
@@ -27,5 +34,6 @@ body {
     background: $color-white;
     color: $color-black;
     font-size: 13px;
+    padding-bottom: 80px;
   }
 }

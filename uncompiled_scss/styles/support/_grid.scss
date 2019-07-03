@@ -23,6 +23,24 @@
     margin-left: -25px;
     margin-right: -25px;
   }
+
+  .contacts {
+    .contact-blocks {
+      .row {
+        .col-5 {
+          padding-right: 0;
+        }
+
+        .col-7 {
+          padding-left: 0;
+
+          .paragraph.right {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 .m-order-0 {
@@ -68,6 +86,16 @@
   .disable-on-tablet {
     max-width: 100%;
     padding: 0;
+  }
+}
+
+@include desktop {
+  .d-order-0 {
+    order: 0;
+  }
+
+  .d-order-1 {
+    order: 1;
   }
 }
 
