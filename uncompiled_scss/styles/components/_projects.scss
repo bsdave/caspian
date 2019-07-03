@@ -24,7 +24,7 @@
     bottom: 0;
     display: flex;
     align-items: flex-end;
-    padding-bottom: 35px;
+    padding-bottom: 25px;
   }
   .projects-info {
     margin-left: 0;
@@ -115,14 +115,20 @@
   .project-carts {
     .carts-block {
       .cart {
-        margin-right: 10px;
+        margin-right: 0;
+        margin-left: 0;
+
         .cart-link {
           padding: 0 90px;
         }
       }
     }
   }
+
   .projects-pic {
+    .project-body {
+      padding-bottom: 85px;
+    }
     .projects-info {
       padding-right: 25%;
     }
@@ -163,7 +169,7 @@
     }
     .carts-block {
       .cart {
-        margin-right: 20px;
+
         box-shadow: 1px 5px 10px 1px #cccc;
         .cart-link {
           padding: 0 90px;

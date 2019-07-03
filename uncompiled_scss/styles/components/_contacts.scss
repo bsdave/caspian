@@ -29,6 +29,10 @@
         min-height: 190px;
       }
   }
+
+  .contacts-list {
+    padding-top: 15px;
+  }
 }
 
 @include tablet {
@@ -38,6 +42,10 @@
         width: 100%;
         min-height: 450px;
       }
+    }
+
+    .contacts-list {
+      padding-top: 0;
     }
   }
 }
@@ -63,13 +71,15 @@
           color: #232831;
         }
       }
-        .img-block{
-          width: 600px;
-          min-height: 500px;
+        .img-block {
+          width: 50%;
+          min-height: calc(100vh - 275px);
           position: absolute;
           display: inline-block;
           top: 0;
           right: 0;
+          left: 50%;
+          bottom: 0;
         }
     }
   }
