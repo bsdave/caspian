@@ -39,10 +39,8 @@
       margin-bottom: 10px;
     }
     .description {
-      font-family: 'Circe-Regular';
-      font-size: 18px;
-      line-height: 25px;
       letter-spacing: 0;
+      color: $color-white;
       padding: 0 15% 0 25px;
     }
   }
@@ -155,7 +153,6 @@
       .description {
         font-size: 22px;
         letter-spacing: 0;
-        line-height: 30px;
         padding: 0 52% 0 0;
       }
     }

@@ -1,5 +1,5 @@
 .img-block {
-  display: block;
+  display: inline-block;
   width: 100%;
   height: auto;
 }
@@ -12,7 +12,13 @@
   margin-left: 25px;
   line-height: 35px;
   margin-top: 0;
+}
 
+.description {
+  font-family: 'Circe-Regular';
+  color: $color-white;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .button {
@@ -40,4 +46,10 @@
     line-height: 70px;
     margin-top: 0;
   }
+  .description {
+    font-size: 20px;
+    line-height: 30px;
+    color: $color-darkgray;
+  }
+
 }

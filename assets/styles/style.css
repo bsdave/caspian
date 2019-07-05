@@ -776,15 +776,18 @@ input[type="number"] { -moz-appearance: textfield; }
 
 @media screen and (min-width: 1320px) { .wide-container { max-width: 1345px; } }
 
-.img-block { display: block; width: 100%; height: auto; }
+.img-block { display: inline-block; width: 100%; height: auto; }
 
 .title { font-family: 'YesevaOne'; font-style: normal; font-weight: normal; font-size: 28px; margin-left: 25px; line-height: 35px; margin-top: 0; }
+
+.description { font-family: 'Circe-Regular'; color: #FFFFFF; font-size: 18px; line-height: 25px; }
 
 .button { background: #C60A2B; color: #FFFFFF; font-family: 'Circe-Bold'; font-size: 13px; letter-spacing: 1.73px; text-transform: uppercase; text-decoration: none; padding: 18px 38px; display: inline-block; -webkit-transition: 250ms ease; -o-transition: 250ms ease; transition: 250ms ease; }
 
 .button:hover { background: #B40927; }
 
-@media (min-width: 992px) { .title { font-size: 60px; line-height: 70px; margin-top: 0; } }
+@media (min-width: 992px) { .title { font-size: 60px; line-height: 70px; margin-top: 0; }
+  .description { font-size: 20px; line-height: 30px; color: #232831; } }
 
 .header { position: absolute; top: 0; z-index: 20; right: 0; left: 0; letter-spacing: 1.7px; line-height: normal; }
 
@@ -929,7 +932,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .projects-pic .projects-info .title { font-size: 30px; line-height: 35px; letter-spacing: -1px; margin-bottom: 10px; }
 
-.projects-pic .projects-info .description { font-family: 'Circe-Regular'; font-size: 18px; line-height: 25px; letter-spacing: 0; padding: 0 15% 0 25px; }
+.projects-pic .projects-info .description { letter-spacing: 0; color: #FFFFFF; padding: 0 15% 0 25px; }
 
 .project-carts { text-align: center; margin-bottom: 70px; }
 
@@ -952,11 +955,32 @@ input[type="number"] { -moz-appearance: textfield; }
   .projects-pic .img-block { min-height: 500px; -webkit-box-shadow: 0 5px 10px 0 #cccc; box-shadow: 0 5px 10px 0 #cccc; }
   .projects-pic .projects-info { text-align: left; color: #FFFFFF; padding-right: 13%; }
   .projects-pic .projects-info .title { font-size: 56px; line-height: 55px; margin-left: 0; letter-spacing: -1px; }
-  .projects-pic .projects-info .description { font-size: 22px; letter-spacing: 0; line-height: 30px; padding: 0 52% 0 0; }
+  .projects-pic .projects-info .description { font-size: 22px; letter-spacing: 0; padding: 0 52% 0 0; }
   .projects-pic .project-body { padding-bottom: 85px; }
   .project-carts .title { font-size: 25px; line-height: 35px; letter-spacing: 0.5px; padding: 0 17%; }
   .project-carts .carts-block .cart { -webkit-box-shadow: 1px 5px 10px 1px #cccc; box-shadow: 1px 5px 10px 1px #cccc; }
   .project-carts .carts-block .cart .cart-link { padding: 0 90px; } }
+
+.about-block { margin-top: 106px; }
+
+.about-block .about-head .title { margin-left: 0; margin-bottom: 45px; }
+
+.about-block .about-head .head .about-image { margin-left: -25px; margin-right: -25px; margin-bottom: 70px; }
+
+.about-block .about-head .head .about-description { position: relative; }
+
+.about-block .about-head .head .about-description::before { content: ""; position: absolute; left: 0; top: -50px; background: url("../images/quotes.png") center no-repeat; height: 25px; width: 30px; display: inline-block; }
+
+.about-block .about-head .head .about-description .description { margin: 0; }
+
+.about-block .about-head .head .about-description .description:last-child { color: #989FAB; }
+
+@media (min-width: 992px) { .about-block { margin-top: 0; }
+  .about-block .about-head .title { margin-left: 92px; }
+  .about-block .about-head .head { margin-left: auto; margin-right: auto; width: 60%; }
+  .about-block .about-head .head .about-image { margin: 15px 0 30px 0; }
+  .about-block .about-head .head .about-description { padding: 0 10px 0 67px; }
+  .about-block .about-head .head .about-description .description:last-child { margin-top: 15px; } }
 
 html { position: relative; min-height: 100vh; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
