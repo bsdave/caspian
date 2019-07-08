@@ -1,6 +1,8 @@
 $font_bold: '../fonts/Circe-Bold';
 $font_regular: '../fonts/Circe-Regular';
 $font_yeseva: '../fonts/YesevaOne';
+$font_rubik: '../fonts/Rubik-Medium';
+$font_rubik-regular: '../fonts/Rubik-Regular';
 
 // Circe Bold
 @font-face {
@@ -39,5 +41,32 @@ $font_yeseva: '../fonts/YesevaOne';
   url($font_yeseva + '.ttf') format('truetype'), /* Safari, Android, iOS */
   url($font_yeseva + '.svg#svgFontName') format('svg'), /* Legacy iOS */
   url($font_yeseva + '.otf') format('openType');
+  font-weight: normal;
+}
+// Rubik-Medium
+
+@font-face {
+  font-family: 'Rubik-Medium';
+  src: url($font_rubik + '.eot'); /* IE9 Compat Modes */
+  src: url($font_rubik + '.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url($font_rubik + '.woff2') format('woff2'), /* Super Modern Browsers */
+  url($font_rubik + '.woff') format('woff'), /* Pretty Modern Browsers */
+  url($font_rubik + '.ttf') format('truetype'), /* Safari, Android, iOS */
+  url($font_rubik + '.svg#svgFontName') format('svg'), /* Legacy iOS */
+  url($font_rubik + '.otf') format('openType');
+  font-weight: 500;
+}
+
+// Rubik-Regular
+
+@font-face {
+  font-family: 'Rubik-Regular';
+  src: url($font_rubik-regular + '.eot'); /* IE9 Compat Modes */
+  src: url($font_rubik-regular + '.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url($font_rubik-regular + '.woff2') format('woff2'), /* Super Modern Browsers */
+  url($font_rubik-regular + '.woff') format('woff'), /* Pretty Modern Browsers */
+  url($font_rubik-regular + '.ttf') format('truetype'), /* Safari, Android, iOS */
+  url($font_rubik-regular + '.svg#svgFontName') format('svg'), /* Legacy iOS */
+  url($font_rubik-regular + '.otf') format('openType');
   font-weight: normal;
 }

@@ -34,9 +34,13 @@
   }
 }
 
+
+
+
 @include desktop {
   .about-block {
     margin-top: 0;
+    margin-bottom: 100px;
     .about-head {
       .title {
         margin-left: 92px;
@@ -61,3 +65,5 @@
     }
   }
 }
+
+

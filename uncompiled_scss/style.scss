@@ -12,6 +12,7 @@
 @import "styles/components/contacts";
 @import "styles/components/projects";
 @import "styles/components/about_us";
+@import "styles/components/main_page";
 
 html {
   position: relative;
@@ -35,6 +36,5 @@ body {
     background: $color-white;
     color: $color-black;
     font-size: 13px;
-    padding-bottom: 80px;
   }
 }
