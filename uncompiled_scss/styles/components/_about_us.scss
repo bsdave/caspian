@@ -1,5 +1,6 @@
 .about-block {
   margin-top: 106px;
+  margin-bottom: 65px;
   .about-head {
     .title {
       margin-left: 0;
@@ -9,15 +10,18 @@
       .about-image {
         margin-left: -25px;
         margin-right: -25px;
-        margin-bottom: 70px;
+        margin-bottom: 20px;
       }
       .about-description {
         position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-end;
         &::before {
           content: "";
           position: absolute;
           left: 0;
-          top: -50px;
+          top: 0;
           background: url("../images/quotes.png") center no-repeat;
           height: 25px;
           width: 30px;
@@ -28,19 +32,121 @@
           &:last-child {
             color: $color-lightgrayish;
           }
+          &:first-child {
+            margin-top: 20px;
+          }
         }
       }
     }
   }
 }
 
+.posts-block {
+  margin-bottom: 100px;
+  .posts {
+    .add-post {
+      text-align: center;
+      .btn {
+        font-family: 'Circle-Bold';
+        font-weight: 900;
+        text-decoration: none;
+        border: 1px solid #989FAB;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 1.1px;
+        text-transform: uppercase;
+        padding: 22px 60px;
+        position: relative;
+        color: $color-white;
+        transition: 300ms;
+        &::before {
+          content: "";
+          position: absolute;
+          right: 33px;
+          top: 20px;
+          background: url("../images/sm-arrow.svg") center no-repeat;
+          height: 17px;
+          width: 10px;
+          display: inline-block;
+          filter: brightness(0) invert(1);
+          transform: scale(-1, 1);
+        }
+      }
+    }
+    .title {
+      text-align: center;
+      font-family: "YesevaOne";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 35px;
+      letter-spacing: -1px;
+      margin-left: 0;
+      margin-bottom: 40px;
+    }
+    .post {
+      margin-bottom: 50px;
+      &.none {
+        display: none;
+      }
+      .img{
+        margin: 60px 0;
+      }
+      .post-box {
+        &.box-1 {
+          margin-bottom: 10px;
+        }
+        &.box-2 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+      .post-info {
+        .post-link {
+          font-family: 'Circle-Bold';
+          font-weight: 900;
+          font-size: 22px;
+          line-height: 30px;
+          color: #FFFFFF;
+          text-decoration: none;
+          border-bottom: 1px solid #232831;
+          transition: 500ms;
 
+        }
+        .post-datetime {
+          font-family: 'Rubik-Regular';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          color: #989FAB;
+        }
+        .post-category {
+          text-decoration: none;
+          font-family: 'Rubik-Medium';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          text-transform: uppercase;
+          border: 1px solid #989FAB;
+          color: #989FAB;
+          padding: 9px 15px 9px 15px;
+          transition: 300ms;
 
+        }
+      }
+    }
+  }
+}
 
 @include desktop {
   .about-block {
     margin-top: 0;
-    margin-bottom: 100px;
+    margin-bottom: 111px;
     .about-head {
       .title {
         margin-left: 92px;
@@ -50,18 +156,110 @@
         margin-right: auto;
         width: 60%;
         .about-image {
-          margin: 15px 0 30px 0;
+          margin: 15px 0 35px 0;
         }
         .about-description {
           padding: 0 10px 0 67px;
+          align-items: flex-start;
           .description {
             &:last-child {
               margin-top: 15px;
             }
+            &:first-child {
+              margin-top: 0;
+            }
           }
         }
       }
+    }
+  }
 
+  .posts-block {
+    margin-bottom: 180px;
+    .posts {
+      .add-post {
+        .btn {
+          color: #232831;
+          padding: 22px 48px;
+          &::before{
+            filter: none;
+            transform: none;
+          }
+          &:hover {
+            background: $color-red;
+            color: #ffffff;
+            border: none;
+          }
+          &:hover:before{
+            filter: brightness(0) invert(1);
+          }
+        }
+      }
+      .title {
+        text-align: left;
+        margin-left: 96px;
+        font-size: 60px;
+        line-height: 70px;
+        color: #232831;
+        margin-bottom: 60px;
+      }
+      .post {
+        margin-bottom: 50px;
+        &.none {
+          display: block;
+        }
+        .img {
+          padding: 0 20%;
+          margin-top: 77px;
+          &.arrow {
+            &::before {
+              content: "";
+              position: absolute;
+              left: 47%;
+              top: 69%;
+              background: url("../images/arr.svg") center no-repeat;
+              height: 15px;
+              width: 60px;
+              font-size: 20px;
+            }
+          }
+        }
+        .post-info {
+          position: relative;
+
+          .post-box {
+            margin-left: 33%;
+            &.box-2 {
+              .post-category {
+                position: absolute;
+                left: 20%;
+                top: 7px;
+              }
+            }
+          }
+          .post-link {
+            font-size: 30px;
+            line-height: 35px;
+            color: #232831;
+            margin-right: 20%;
+            &:hover {
+              color: $color-red;
+              border-bottom: 1px solid $color-red;
+            }
+          }
+          .post-category {
+            color: #232831;
+            &:hover {
+              background: #989FAB;;
+            }
+          }
+          .post-datetime {
+            margin-top: 10px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+          }
+        }
+      }
     }
   }
 }

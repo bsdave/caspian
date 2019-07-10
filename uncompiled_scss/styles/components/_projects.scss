@@ -99,10 +99,6 @@
         color: $color-darkgray;
         opacity: 0.8;
         transition: 300ms;
-        &:hover {
-          min-height: 105px;
-          opacity: 0.9;
-        }
       }
     }
   }
@@ -174,6 +170,10 @@
         box-shadow: 1px 5px 10px 1px #cccc;
         .cart-link {
           padding: 0 90px;
+          &:hover {
+            min-height: 105px;
+            opacity: 0.9;
+          }
         }
       }
     }
