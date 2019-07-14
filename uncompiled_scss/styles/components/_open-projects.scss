@@ -30,7 +30,7 @@
         margin-left: 0;
       }
       .sm-title {
-        font-family: 'Circle-Bold';
+        font-family: 'Circe-Bold';
         font-weight: 900;
         font-size: 13px;
         line-height: 19px;
@@ -97,10 +97,12 @@
     position: absolute;
     width: 30px;
     height: 20px;
+    padding: 30px;
     background: url('../images/sm-arrow.svg') center no-repeat;
     background-color: #FFFFFF;
-    top: -10%;
-    transform: rotate(-90deg);
+    top: -17%;
+    z-index: 10;
+    transform: rotate(90deg);
     cursor: pointer;
   }
   .prev {
@@ -108,6 +110,7 @@
   }
   .next {
     right: 0;
+    transform: rotate(-90deg);
   }
   .slick-slide {
     margin: 0 5px;
@@ -120,7 +123,6 @@
   }
   .slick-prev {
     left: 50px;
-    z-index: 1;
   }
   .slick-next {
     right: 50px;
@@ -203,5 +205,14 @@
   }
   .carousel-body {
     margin: auto;
+    .prev,
+    .next {
+      background: url('../images/arrow.svg') center no-repeat;
+      transform: rotate(0);
+    }
+    .next {
+      right: 0;
+      transform: rotate(180deg);
+    }
   }
 }

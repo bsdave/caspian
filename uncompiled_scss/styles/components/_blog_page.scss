@@ -133,7 +133,7 @@
 .buttons {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   .button {
     background: transparent;
     padding: 30px 0 30px 25px;
@@ -232,6 +232,10 @@
         margin-bottom: 33px;
         .post-category {
           color: #232831;
+          transition: .3s ease-in-out;
+          &:hover{
+            background: #989FAB;
+          }
         }
         .post-datetime {
           color: #989FAB;
@@ -259,6 +263,7 @@
   .buttons {
     flex-direction: row;
     margin-bottom: 70px;
+    width: 100%;
     .button {
       flex-basis: 1200px;
       flex-grow: 0;
@@ -266,6 +271,7 @@
       padding: 65px 0 30px 0;
       display: inline-block;
       background: #E8EBF1;
+      transition: .3s ease-in-out;
       .title {
         font-size: 20px;
         color: $color-darkgray;

@@ -21,15 +21,16 @@ html {
   position: relative;
   min-height: 100vh;
   box-sizing: border-box;
+
 }
 
 body {
-  background: #232831;
+  background-color: #232831;
   color: $color-white;
   font-size: 15px;
   font-size: 13px;
   &.bg-image {
-    background: url("../images/sm-bg.png") right 10% no-repeat;
+    background: #232831 url("../images/sm-bg.png") right 10% no-repeat;
   }
 }
 
@@ -43,7 +44,6 @@ body {
     background: $color-white;
     color: $color-black;
     font-size: 13px;
-    
     &.bg-image {
       background: url("../images/bitmap-background.png") right 10% no-repeat;
     }
