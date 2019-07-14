@@ -1,31 +1,21 @@
-function swallowError (error) {
-  console.log(error.toString())
+const { watch, src, dest } = require('gulp'),
+  sass = require('gulp-sass'),
+  autoprefixer = require('gulp-autoprefixer')
 
-  this.emit('end')
+function css() {
+  return src('uncompiled_scss/style.scss')
+    .pipe(sass({
+      outputStyle: 'compact'
+    }))
+    .on("error", sass.logError)
+    .pipe(autoprefixer({
+      cascade: false
+    }))
+    .pipe(dest('assets/styles/'))
 }
 
-const gulp = require('gulp'),
-      sass = require('gulp-sass'),
-      autoprefixer = require('gulp-autoprefixer'),
-      rename = require('gulp-rename'),
-      minify = require('gulp-uglify')
+function loopCompiling() {
+  watch('uncompiled_scss/**/*', css);
+}
 
-gulp.task('css', function() {
-  gulp.src('uncompiled_scss/style.scss')
-  .pipe(sass({
-    outputStyle: 'compact'
-  }))
-  .on('error', swallowError)
-  .pipe(autoprefixer({
-    browsers: ['last 5 versions'],
-    cascade: false,
-    grid: true
-  }))
-  .pipe(gulp.dest('assets/styles/'))
-})
-
-gulp.task('watch', function(){
-  gulp.watch('uncompiled_scss/**/*', ['css'])
-})
-
-gulp.task('default', ['watch', 'css'])
+exports.default = loopCompiling;
