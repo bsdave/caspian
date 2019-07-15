@@ -136,6 +136,9 @@
         &:last-child .button {
           color: $color-white;
           background: $color-red;
+          &:hover{
+            background: #B40927;;
+          }
         }
       }
     }

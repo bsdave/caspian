@@ -6,6 +6,8 @@
 @import "styles/support/mixins";
 @import "styles/support/grid";
 @import "styles/support/common";
+@import "styles/support/slider";
+@import "styles/support/buttons";
 @import "styles/components/header";
 @import "styles/components/footer";
 @import "styles/components/open_jobs";
@@ -45,7 +47,7 @@ body {
     color: $color-black;
     font-size: 13px;
     &.bg-image {
-      background: url("../images/bitmap-background.png") right 10% no-repeat;
+      background: url("../images/bitmap-background.png") right 15% no-repeat;
     }
   }
 }

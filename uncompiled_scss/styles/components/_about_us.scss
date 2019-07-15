@@ -1,6 +1,6 @@
 .about-block {
   margin-top: 106px;
-  margin-bottom: 65px;
+  margin-bottom: 70px;
   .about-head {
     .title {
       margin-left: 0;
@@ -89,17 +89,15 @@
       &.none {
         display: none;
       }
-      .img{
+      .img {
         margin: 60px 0;
       }
       .post-box {
-        &.box-1 {
-          margin-bottom: 10px;
-        }
         &.box-2 {
           display: flex;
           align-items: center;
           justify-content: space-between;
+          margin-top: 10px;
           margin-bottom: 0;
           padding-bottom: 0;
         }
@@ -114,29 +112,6 @@
           text-decoration: none;
           border-bottom: 2px solid #232831;
           transition: 500ms;
-
-        }
-        .post-datetime {
-          font-family: 'Rubik-Regular';
-          font-style: normal;
-          font-weight: normal;
-          font-size: 14px;
-          line-height: 17px;
-          color: #989FAB;
-        }
-        .post-category {
-          text-decoration: none;
-          font-family: 'Rubik-Medium';
-          font-style: normal;
-          font-weight: 500;
-          font-size: 12px;
-          line-height: 14px;
-          text-transform: uppercase;
-          border: 1px solid #989FAB;
-          color: #989FAB;
-          padding: 9px 15px 9px 15px;
-          transition: 300ms;
-
         }
       }
     }
@@ -181,7 +156,7 @@
         .btn {
           color: #232831;
           padding: 22px 48px;
-          &::before{
+          &::before {
             filter: none;
             transform: none;
           }
@@ -190,7 +165,7 @@
             color: #ffffff;
             border: none;
           }
-          &:hover:before{
+          &:hover:before {
             filter: brightness(0) invert(1);
           }
         }
@@ -204,13 +179,14 @@
         margin-bottom: 60px;
       }
       .post {
-        margin-bottom: 50px;
+        margin-bottom: 35px;
         &.none {
           display: block;
         }
         .img {
+          margin-top: 35px;
+          margin-bottom: 0;
           padding: 0 20%;
-          margin-top: 77px;
           &.arrow {
             &::before {
               content: "";
@@ -226,10 +202,10 @@
         }
         .post-info {
           position: relative;
-
           .post-box {
             margin-left: 33%;
             &.box-2 {
+
               .post-category {
                 position: absolute;
                 left: 20%;
@@ -239,24 +215,13 @@
           }
           .post-link {
             font-size: 30px;
-            line-height: 45px;
+            line-height: 40px;
             color: #232831;
             margin-right: 20%;
             &:hover {
               color: $color-red;
               border-bottom: 2px solid $color-red;
             }
-          }
-          .post-category {
-            color: #232831;
-            &:hover {
-              background: #989FAB;;
-            }
-          }
-          .post-datetime {
-            margin-top: 10px;
-            margin-bottom: 0;
-            padding-bottom: 0;
           }
         }
       }

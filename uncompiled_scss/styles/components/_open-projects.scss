@@ -15,6 +15,9 @@
       }
     }
     .head-block {
+      position: absolute;
+      top: 30%;
+      left: 35%;
       margin-bottom: 55px;
       text-align: center;
       .title {
@@ -47,7 +50,7 @@
       margin-bottom: 50px;
       .info {
         display: inline-flex;
-        margin-right: 20px;
+        margin-bottom: 40px;
       }
       .body-description {
         .description {
@@ -97,10 +100,10 @@
     position: absolute;
     width: 30px;
     height: 20px;
-    padding: 30px;
+    padding: 23px;
     background: url('../images/sm-arrow.svg') center no-repeat;
     background-color: #FFFFFF;
-    top: -17%;
+    top: -46%;
     z-index: 10;
     transform: rotate(90deg);
     cursor: pointer;
@@ -207,6 +210,7 @@
     margin: auto;
     .prev,
     .next {
+      top: -27%;
       background: url('../images/arrow.svg') center no-repeat;
       transform: rotate(0);
     }

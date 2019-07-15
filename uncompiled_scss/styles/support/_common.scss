@@ -9,7 +9,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
-  margin-left: 25px;
+  margin-left: 0;
   line-height: 35px;
   margin-top: 0;
 }
@@ -21,26 +21,45 @@
   line-height: 25px;
 }
 
-.button {
-  background: $color-red;
-  color: $color-white;
-  font-family: 'Circe-Bold';
-
-  font-size: 13px;
-  letter-spacing: 1.73px;
-  text-transform: uppercase;
+.post-category {
   text-decoration: none;
-  padding: 18px 38px;
-  display: inline-block;
-
-  transition: 250ms ease;
+  font-family: 'Rubik-Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  border: 1px solid #989FAB;
+  color: #F3F5F7;
+  padding: 9px 15px 9px 15px;
+  transition: 300ms;
 }
+.post-datetime {
+  font-family: 'Rubik-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F3F5F7;
+}
+
 
 @include desktop {
   .title {
     font-size: 60px;
     line-height: 70px;
+    margin-left: 92px;
     margin-top: 0;
+  }
+  .post-category {
+    color: #232831;
+    transition: .3s ease-in-out;
+    &:hover {
+      background: #989FAB;
+    }
+  }
+  .post-datetime {
+    color: #989FAB;
   }
   .description {
     font-size: 20px;
