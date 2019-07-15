@@ -1,56 +1,74 @@
 .img-block {
-  display: inline-block;
+  display: block;
   width: 100%;
   height: auto;
 }
 
 .title {
-  font-family: 'YesevaOne';
+  font-family: "YesevaOne";
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
-  margin-left: 25px;
+  margin-left: 0;
   line-height: 35px;
   margin-top: 0;
 }
 
 .description {
-  font-family: 'Circe-Regular';
+  font-family: "Circe-Regular";
   color: $color-white;
   font-size: 18px;
   line-height: 25px;
 }
 
-.button {
-  background: $color-red;
-  color: $color-white;
-  font-family: 'Circe-Bold';
-
-  font-size: 13px;
-  letter-spacing: 1.73px;
-  text-transform: uppercase;
+.post-category {
   text-decoration: none;
-  padding: 18px 38px;
-  display: inline-block;
-
-  transition: 250ms ease;
+  font-family: "Rubik-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  border: 1px solid #989fab;
+  color: #f3f5f7;
+  padding: 9px 15px 9px 15px;
+  transition: 300ms;
 }
+.post-datetime {
+  font-family: "Rubik-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f3f5f7;
+}
+
 
 @include desktop {
   .title {
     font-size: 60px;
     line-height: 70px;
+    margin-left: 92px;
     margin-top: 0;
+  }
+  .post-category {
+    color: #232831;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      background: #989fab;
+    }
+  }
+  .post-datetime {
+    color: #989fab;
   }
   .description {
     font-size: 20px;
     line-height: 30px;
     color: $color-darkgray;
   }
-  .button{
+  .button {
     &:hover {
-      background: #B40927;
+      background: #b40927;
     }
   }
-
 }
