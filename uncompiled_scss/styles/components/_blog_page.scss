@@ -4,18 +4,7 @@
     margin-left: auto;
     position: relative;
     margin-bottom: 32px;
-    &::before {
-      content: '';
-      width: 30px;
-      height: 20px;
-      position: absolute;
-      top: -40px;
-      left: 5px;
-      filter: brightness(0) invert(1);
-      transform: rotate(180deg);
-      background: url("../images/arr.svg") center no-repeat;
-      background-size: contain;
-    }
+
     .none {
       display: none;
     }

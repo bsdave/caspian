@@ -1,6 +1,5 @@
 .block-box {
   margin-top: 100px;
-  margin-bottom: 130px;
   .block {
     .img {
       position: relative;
@@ -106,7 +105,7 @@
     padding: 23px;
     background: url('../images/sm-arrow.svg') center no-repeat;
     background-color: #FFFFFF;
-    top: -15%;
+    top: -46px;
     z-index: 10;
     transform: rotate(90deg);
     cursor: pointer;
@@ -162,6 +161,8 @@
 @include desktop {
   .block-box {
     margin-top: 0;
+    margin-bottom: 130px;
+
     .block {
       .img {
         .descktop {

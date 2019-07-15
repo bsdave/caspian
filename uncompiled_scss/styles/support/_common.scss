@@ -1,11 +1,11 @@
 .img-block {
-  display: inline-block;
+  display: block;
   width: 100%;
   height: auto;
 }
 
 .title {
-  font-family: 'YesevaOne';
+  font-family: "YesevaOne";
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
@@ -15,7 +15,7 @@
 }
 
 .description {
-  font-family: 'Circe-Regular';
+  font-family: "Circe-Regular";
   color: $color-white;
   font-size: 18px;
   line-height: 25px;
@@ -23,24 +23,24 @@
 
 .post-category {
   text-decoration: none;
-  font-family: 'Rubik-Medium';
+  font-family: "Rubik-Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
-  border: 1px solid #989FAB;
-  color: #F3F5F7;
+  border: 1px solid #989fab;
+  color: #f3f5f7;
   padding: 9px 15px 9px 15px;
   transition: 300ms;
 }
 .post-datetime {
-  font-family: 'Rubik-Regular';
+  font-family: "Rubik-Regular";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  color: #F3F5F7;
+  color: #f3f5f7;
 }
 
 
@@ -53,23 +53,22 @@
   }
   .post-category {
     color: #232831;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     &:hover {
-      background: #989FAB;
+      background: #989fab;
     }
   }
   .post-datetime {
-    color: #989FAB;
+    color: #989fab;
   }
   .description {
     font-size: 20px;
     line-height: 30px;
     color: $color-darkgray;
   }
-  .button{
+  .button {
     &:hover {
-      background: #B40927;
+      background: #b40927;
     }
   }
-
 }

@@ -21,15 +21,13 @@
     }
   }
   .slide-controls {
-    position: relative;
-
     .prev-loc,
     .next-loc {
       content: "";
       position: absolute;
       width: 25px;
       height: 50px;
-      top: -55px;
+      top: -50px;
       background: url("../images/arrow.svg") center no-repeat;
       background-color: #FFFFFF;
       padding: 10px 22px;
@@ -56,14 +54,13 @@
       display: none;
     }
     .slide-controls {
-      position: relative;
       .prev-loc,
       .next-loc {
         content: "";
         position: absolute;
         width: 25px;
         height: 50px;
-        top: 200px;
+        top: calc(50% - 25px);
         padding: 30px;
       }
     }
