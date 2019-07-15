@@ -8,14 +8,23 @@ $(function () {
   });
 
   $('.carousel').slick({
-    mobileFirst: true,
     autoplay: true,
     infinite: true,
     speed: 500,
     autoplaySpeed: 2000,
     slidesToShow: 3,
     prevArrow: $('.prev'),
-    nextArrow: $('.next')
+    nextArrow: $('.next'),
+    responsive: [
+      {
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+
   });
 
 

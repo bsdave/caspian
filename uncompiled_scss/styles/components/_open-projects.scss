@@ -6,18 +6,21 @@
       position: relative;
       margin-right: -25px;
       margin-left: -25px;
-      .img-block {
-        opacity: 0.8;
-        -moz-opacity: 0.8;
-        filter: alpha(opacity=80) black;
-        -khtml-opacity: 0.8;
-        background-color: #000;
+      .descktop {
+        display: none;
+      }
+      .mobile {
+        display: block;
       }
     }
     .head-block {
       position: absolute;
-      top: 30%;
-      left: 35%;
+      margin: auto;
+      position: absolute;
+      top: 13%;
+      left: 0;
+      bottom: 0;
+      right: 0;
       margin-bottom: 55px;
       text-align: center;
       .title {
@@ -103,7 +106,7 @@
     padding: 23px;
     background: url('../images/sm-arrow.svg') center no-repeat;
     background-color: #FFFFFF;
-    top: -46%;
+    top: -15%;
     z-index: 10;
     transform: rotate(90deg);
     cursor: pointer;
@@ -132,11 +135,41 @@
   }
 }
 
+@include tablet {
+  .carousel-body {
+    .prev,
+    .next {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 20px;
+      padding: 23px;
+      background: url('../images/sm-arrow.svg') center no-repeat;
+      background-color: #FFFFFF;
+      top: -29%;
+      z-index: 10;
+      transform: rotate(90deg);
+      cursor: pointer;
+    }
+    .next {
+      right: 0;
+      transform: rotate(-90deg);
+    }
+  }
+}
+
 @include desktop {
   .block-box {
     margin-top: 0;
     .block {
       .img {
+        .descktop {
+          display: block;
+        }
+        .mobile {
+          display: none;
+        }
         margin: auto;
         height: auto;
         .img-block {
@@ -165,10 +198,10 @@
       .body-block {
         flex-wrap: nowrap;
         flex-direction: row;
-        margin-bottom: 130px;
+        margin-bottom: 120px;
         .info {
           display: inline-flex;
-          flex-basis: 265px;
+          flex-basis: 300px;
           margin-right: 20px;
         }
         .body-description {
